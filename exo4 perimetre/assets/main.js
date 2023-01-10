@@ -1,4 +1,4 @@
-let carre = Number (prompt("donner la longeur en cm du carré : ")); 
+let carre = Number (prompt("donner la longueur en cm du carré : ")); 
 let perimetre = carre*4;
 let aire =carre*carre
 
@@ -9,8 +9,8 @@ et son aire est de ${aire} cm `
 console.log(phrase1)
 
 
-let longeur = Number (prompt("donner la longeur en cm du rectangle : ")); 
-let largeur = Number (prompt("donner la largeur en cm du rectangle : ")); 
+let longeur = Number (prompt("donner la longueur en cm du rectangle : ")); 
+let largeur = Number (prompt("donner la largueur en cm du rectangle : ")); 
 let perimetreRectangle = (longeur+largeur)*2;
 let aireRectangle =longeur*largeur
 

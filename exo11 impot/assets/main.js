@@ -46,18 +46,18 @@ switch(true){
     
     
     case netImposable >= 10778 && netImposable <= 27478 :
-        netImposable = Math.round(netImposable * 0.11)
+        netImposable = Math.round(netImposable- 10777) * 0.11
         break
     case netImposable >= 27479 && netImposable <= 78570 :
-        netImposable = Math.round((netImposable * 0.30 ) + 1837)
+        netImposable = Math.round((netImposable - 27479  )* 0.30 + 1837)
         
         break
     case netImposable >= 78571 && netImposable <= 168994 :
-        netImposable = Math.round((netImposable * 0.41 ) + 1837 + 15327)
+        netImposable = Math.round((netImposable- 78571  )* 0.41 + 1837 + 15327)
         
         break
     case netImposable >= 168995 :
-        netImposable = Math.round((netImposable * 0.45 ) + 1837 + 15327 + 37073)
+        netImposable = Math.round((netImposable- 168995  ) * 0.45 + 1837 + 15327 + 37073)
        
         break
        

@@ -5,12 +5,12 @@ let salaire = prompt("donner votre salaire du mois : ")
 let calcsalaire = 0
 
 if ((anciennete <= 10 )&&(anciennete >= 1)){
-    for(let i= 0; i <= anciennete ; i++){
+    for(let i= 1; i <= anciennete ; i++){
         calcsalaire =calcsalaire + salaire/2
         
     }
 } else {
-    for(let i= 0; i <= anciennete ; i++){
+    for(let i= 1; i <= anciennete ; i++){
         calcsalaire =calcsalaire +  salaire/2
         
     }

@@ -1,13 +1,16 @@
 let num = Number (prompt("donner un numero :"))
-let j = 0
-for (let i=0; i < num ; i++){
-    
-    for (j= 0+i ;j < num ; j++){
-        if (j === num){
-            console.log(num)
-        } else j ++
-    }
- 
-   
-    console.log(num)
+let total = 0
+let phrase = "0"
+let i = 1
+
+
+
+while (total <= num){
+
+    total +=i
+    phrase = `${phrase} + ${i}`
+    i++
 }
+
+
+console.log(phrase)

@@ -1,5 +1,5 @@
 
-let annee = 1
+let annee = 0
 let habitants = 96809
        
 while (habitants < 120000){

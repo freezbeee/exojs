@@ -3,7 +3,7 @@ let mot = prompt("donner un mot : ")
 
 
 
-    mot = mot.toLocaleLowerCase();
+    mot = mot.toLowerCase();
     let motinverse = mot.split("").reverse("").join("");  
   
 

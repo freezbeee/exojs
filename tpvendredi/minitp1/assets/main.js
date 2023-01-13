@@ -16,6 +16,7 @@ let annuaire = [
   },
 ];
 let affichage = "";
+
 let personne = "";
 let i = 0;
 let menu = 0;
@@ -28,22 +29,22 @@ while (menu != 4) {
                               3)supprimer un contact
                               4)quiter`)
   );
-  //
-  //
-  //
+
   //
   //
   //
   //
   //   afficher contact
   if (menu == 1) {
+    affichage = "";
     for (let contact of annuaire) {
       personne = `${i}) ${contact.nom} ${contact.prenom} age : ${contact.age}
-      `;
+          `;
       i++;
       affichage += personne;
     }
     affichage = alert(affichage);
+
     i = 0;
     //
     //
@@ -71,17 +72,21 @@ while (menu != 4) {
     //
     // supp contact
   } else if (menu == 3) {
+    affichage = "";
     for (let contact of annuaire) {
       personne = `${i}) ${contact.nom} ${contact.prenom} age : ${contact.age}
-        `;
+            `;
       i++;
       affichage += personne;
     }
-    let supp = Number(prompt(affichage));
+    supp = prompt(affichage);
     i = 0;
-    if (supp == annuaire.includes[supp]) {
+    console.log(supp);
+    if (supp != "") {
       let suppression = annuaire.splice(supp, 1);
     }
+    //   console.log("coucou");
+    // console.log(annuaire.includes[supp]);
   }
 }
 alert("bye");

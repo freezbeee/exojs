@@ -28,7 +28,13 @@ while (menu != 4) {
                               3)supprimer un contact
                               4)quiter`)
   );
-
+  //
+  //
+  //
+  //
+  //
+  //
+  //
   //   afficher contact
   if (menu == 1) {
     for (let contact of annuaire) {
@@ -39,7 +45,12 @@ while (menu != 4) {
     }
     affichage = alert(affichage);
     i = 0;
-
+    //
+    //
+    //
+    //
+    //
+    //
     // ajout de contact
   } else if (menu == 2) {
     let addName = prompt("le nom a ajouter :");
@@ -52,7 +63,12 @@ while (menu != 4) {
     };
 
     addContact = annuaire.push(addContact);
-
+    //
+    //
+    //
+    //
+    //
+    //
     // supp contact
   } else if (menu == 3) {
     for (let contact of annuaire) {
@@ -64,7 +80,7 @@ while (menu != 4) {
     let supp = Number(prompt(affichage));
     i = 0;
     if (supp == annuaire.includes[supp]) {
-      let suppression = annuaire.splice(supp);
+      let suppression = annuaire.splice(supp, 1);
     }
   }
 }

@@ -13,7 +13,6 @@ let fish = [
 let affichage = "";
 let i = 0;
 let option = document.querySelector("#option-container");
-
 let btn = document.querySelector("#btn");
 let addFish = {};
 
@@ -25,13 +24,16 @@ btn.addEventListener("click", () => {
   };
 
   addFish = fish.push(addFish);
+  // console.log("btn");
+  // console.log(fish);
+  affichage = "";
+  if (addFish != "") {
+    for (let key in fish) {
+      affichage += `<option value="${i}">${fish[key]["name"]}</option>`;
+      i++;
+      console.log(key + " : " + fish[key]["name"] + " " + fish[key]["race"]);
+    }
+  }
 });
 
-for (let key in fish) {
-  affichage += `<option value="${i}">${fish[key]["name"]}</option>`;
-  i++;
-
-  console.log(key + " : " + fish[key]["name"] + " " + fish[key]["race"]);
-}
-
-option.innerHTML = affichage;
+// option.innerHTML = affichage;

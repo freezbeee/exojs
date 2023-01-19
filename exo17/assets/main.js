@@ -14,6 +14,19 @@ let affichage = "";
 let i = 0;
 let option = document.querySelector("#option-container");
 
+let btn = document.querySelector("#btn");
+let addFish = {};
+
+btn.addEventListener("click", () => {
+  addFish = {
+    name: document.querySelector("#name").value,
+    race: document.querySelector("#race").value,
+    age: document.querySelector("#age").value,
+  };
+
+  addFish = fish.push(addFish);
+});
+
 for (let key in fish) {
   affichage += `<option value="${i}">${fish[key]["name"]}</option>`;
   i++;

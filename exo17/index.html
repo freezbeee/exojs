@@ -9,11 +9,14 @@
     <title>js</title>
   </head>
   <body>
-    <form action="#">
-      <input type="text" id="name" />
-      <input type="text" id="race" />
-      <input type="numer" id="age" />
-      <button type="">valider</button>
+    <form action="">
+      <label for="name">nom du poisson</label>
+      <input type="text" id="name" required />
+      <label for="race">race du poisson</label>
+      <input type="text" id="race" required />
+      <label for="age">age du poisson</label>
+      <input type="number" id="age" required />
+      <button id="btn">valider</button>
     </form>
 
     <select name="fish" id="fish">

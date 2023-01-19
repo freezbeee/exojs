@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#best {
+  color: green;
+  font-size: 2rem;
+}
+#bad {
+  color: red;
+  font-size: 2rem;
+}
+.goodMoyenne {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+}
+.badMoyenne {
+  color: rgb(43, 255, 0);
+  font-size: 2rem;
+}

@@ -1,4 +1,3 @@
-const memo = document.querySelector("#memoire");
 const affichage = document.querySelector("#affichage");
 // console.log("coucou");
 // stock valeur precedente

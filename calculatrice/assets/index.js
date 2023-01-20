@@ -30,9 +30,8 @@ function gestionTouche() {
     //   // en mode texte evite les addition
     //   affichagePrecedent = touche.toString();
     // } else {
-    // affichagePrecedent = affichagePrecedent + touche.toString();
-    // }
     //   // pas d'espace entre chaque $ (abruti de moi)
+    // }
     affichagePrecedent = `${affichagePrecedent}${touche.toString()}`;
     affichage.innerHTML = affichagePrecedent;
   } else {

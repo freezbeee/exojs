@@ -26,13 +26,14 @@ function gestionTouche() {
     // affiche si numero
     //  met a jour l'ecran
     // affichage concatenation
-    if (affichagePrecedent === "") {
-      // en mode texte evite les addition
-      affichagePrecedent = touche.toString();
-    } else {
-      // pas d'espace entre chaque $ (abruti de moi)
-      affichagePrecedent = `${affichagePrecedent}${touche.toString()}`;
-    }
+    // if (affichagePrecedent === "") {
+    //   // en mode texte evite les addition
+    //   affichagePrecedent = touche.toString();
+    // } else {
+    // affichagePrecedent = affichagePrecedent + touche.toString();
+    // }
+    //   // pas d'espace entre chaque $ (abruti de moi)
+    affichagePrecedent = `${affichagePrecedent}${touche.toString()}`;
     affichage.innerHTML = affichagePrecedent;
   } else {
     // verif des autre touches

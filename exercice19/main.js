@@ -4,6 +4,7 @@ let selectEleve = document.querySelector(".choix-eleve")
 let selectmatiere = document.querySelector(".choix-matiere")
 let btnAddEleve = document.querySelector(".btn-add-eleve")
 let btnAddMatiere = document.querySelector(".btn-add-matiere")
+let btnAddNote = document.querySelector(".btn-add-note")
 let selectionmatiere = document.querySelector(".selection-matiere")
 let selectioneleve = document.querySelector(".selection-eleve")
 let i = 1
@@ -12,15 +13,15 @@ let k = 1
 let hiddeneleves = document.querySelectorAll(".hiddeneleve");
 let hiddenmatieres = document.querySelectorAll(".hiddenmatiere");
 let hiddennotes = document.querySelectorAll(".hiddennote");
-let tableauMatiere = ["plonger", "nage", "apne","francais"]
+let tableauMatiere = ["plonger", "nage", "apne"]
 let statEleve = [
   {
     name : "bubule",
     prenom : "le poisson rouge",
     matiere : {
       plonger : [20,10],
-      nage : 1,
-      apne : 0,
+      nage : [1],
+      apne : [0],
       
     }
   },
@@ -28,14 +29,29 @@ let statEleve = [
     name : "roger",
     prenom : "le roi des poisson",
     matiere : {
-      francais : 14,
-      nage : 5,
-      apne : 18,
+      plonger : [14],
+      nage : [5],
+      apne : [18],
       
     }
   }
 ]
+// ajout de note 
+btnAddNote.addEventListener("click", () => {
+  let note = document.getElementById("add-notes").value;
 
+  // console.log(selectEleve)
+  // selectmatiere
+  if(note != ""){
+    statEleve[selectEleve].matiere[selectmatiere].push(note)
+  }
+  // console.table(statEleve);
+  
+  refreshElevesSelect(selectEleve)
+  refreshElevesSelect(selectioneleve)
+  
+  
+})
 
 // ajout de nom
 btnAddEleve.addEventListener("click", () => {
@@ -68,8 +84,8 @@ btnAddMatiere.addEventListener("click", () => {
     
     for(let i = 0; i < statEleve.length; i++){
       statEleve[i].matiere[addMatiere] = [];
-      // console.table(tableauMatiere)
     }
+    console.table(tableauMatiere)
     console.log(statEleve)
 
     

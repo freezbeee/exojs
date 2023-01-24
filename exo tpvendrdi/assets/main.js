@@ -16,7 +16,6 @@ let annuaire = [
     },
   ];
   let affichage = "";
-  
   let personne = "";
   let i = 0;
   let menu = 0;
@@ -43,7 +42,7 @@ let annuaire = [
         i++;
         affichage += personne;
       }
-      affichage = alert(affichage);
+      alert(affichage);
   
       i = 0;
       //
@@ -83,7 +82,7 @@ let annuaire = [
       i = 0;
       console.log(supp);
       if (supp != "") {
-        let suppression = annuaire.splice(supp, 1);
+      annuaire.splice(supp, 1);
       }
       //   console.log("coucou");
       // console.log(annuaire.includes[supp]);

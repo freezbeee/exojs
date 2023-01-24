@@ -36,15 +36,16 @@ let statEleve = [
     }
   }
 ]
+
 // ajout de note 
 btnAddNote.addEventListener("click", () => {
   let note = document.getElementById("add-notes").value;
 
   // console.log(selectEleve)
   // selectmatiere
-  if(note != ""){
-    statEleve[selectEleve].matiere[selectmatiere].push(note)
-  }
+  // if(note != ""){
+  //   statEleve[selectEleve].matiere[selectmatiere].push(note)
+  // }
   // console.table(statEleve);
   
   refreshElevesSelect(selectEleve)

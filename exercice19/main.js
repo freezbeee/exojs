@@ -39,17 +39,26 @@ let statEleve = [
 
 // ajout de note 
 btnAddNote.addEventListener("click", () => {
-  let note = document.getElementById("add-notes").value;
+  let note =Number(document.getElementById("add-notes").value);
+  const student = statEleve[(selectEleve.value)-1]
+  const lesssonfield = selectmatiere.value
+  // if(note < 0 && note > 20){
+     console.log(student)
+     console.log(note)
+     console.log(lesssonfield)
+    //  console.log(statEleve.matiere[])
+    //  console.log(statEleve)
+    // statEleve[(selectEleve.value)-1].matiere[selectmatiere.value].push(note)
+  // }
+
 
   // console.log(selectEleve)
   // selectmatiere
-  // if(note != ""){
-  //   statEleve[selectEleve].matiere[selectmatiere].push(note)
-  // }
+  // selecteleve
   // console.table(statEleve);
   
-  refreshElevesSelect(selectEleve)
-  refreshElevesSelect(selectioneleve)
+  // refreshElevesSelect(selectEleve)
+  // refreshElevesSelect(selectioneleve)
   
   
 })

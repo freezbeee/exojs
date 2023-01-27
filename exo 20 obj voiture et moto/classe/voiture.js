@@ -1,4 +1,4 @@
-import Vehicule from "./Vehicule";
+import Vehicule from "./Vehicule.js";
 
 export default class Voiture extends Vehicule {
   display() {

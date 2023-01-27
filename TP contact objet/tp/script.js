@@ -1,27 +1,21 @@
-let lastName = document.querySelector("#name");
-let firstname = document.querySelector("#firstname");
-let phone = document.querySelector("#phone");
-let birth = document.querySelector("#birth");
-let mail = document.querySelector("#mail");
-let btn = document.querySelector("#btn");
-let text = document.querySelector("#text");
+let lastName = document.querySelector("#name").value;
+let firstname = document.querySelector("#firstname").value;
+let phone = document.querySelector("#phone").value;
+let birth = document.querySelector("#birth").value;
+let mail = document.querySelector("#mail").value;
+let btn = document.querySelector("button");
+let text = document.querySelector("#text").value;
 // let form = document.querySelector("#form");
 let contact;
-console.log(mail.value);
-console.log(firstname);
+// console.log(mail.value);
 
-btn.addEventListener("click", (e) => {
-  contact = new Contact(lastName, firstname, phone, birth, mail);
-  e.preventDefault();
-  text.innerHTML += contact.display();
-  console.log(contact.display());
-});
+// let lastnamevalue = lastName.value;
 class Contact {
   constructor(lastName, firstname, phone, birth, mail) {
-    this.nom = lastName;
-    this.prenom = firstname;
-    this.telephone = phone;
-    this.naissance = birth;
+    this.lastName = lastName;
+    this.firstname = firstname;
+    this.phone = phone;
+    this.birth = birth;
 
     this.email = mail;
   }
@@ -30,6 +24,16 @@ class Contact {
     return `<th> ${this.name}<th/><th>${this.firstname}<th/> <th> ${this.phone}<th/> <th> ${this.birth}<th/> <th> ${this.mail}<th/>`;
   }
 }
+btn.addEventListener("click", (e) => {
+  // console.log(lastName);
+  console.log(firstname);
+
+  e.preventDefault();
+  contact = new Contact(lastName, firstname, phone, birth, mail);
+  console.log(contact);
+  text.innerHTML += contact.display();
+  console.log(contact.display());
+});
 
 // console.log(renault.display());
 // console.log(BMW.display());

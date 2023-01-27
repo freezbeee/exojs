@@ -1,4 +1,4 @@
-export default class Car {
+export default class Vehicule {
   constructor(name, model, kilometrage, annee) {
     this.name = name;
     this.model = model;

@@ -27,7 +27,7 @@ class Contact {
   }
 
   display() {
-    return `<th> ${this.name}<th/> <th> ${this.firstname}<th/> <th> ${this.phone}<th/> <th> ${this.birth}<th/> <th> ${this.mail}<th/>`;
+    return `<th> ${this.name}<th/><th>${this.firstname}<th/> <th> ${this.phone}<th/> <th> ${this.birth}<th/> <th> ${this.mail}<th/>`;
   }
 }
 

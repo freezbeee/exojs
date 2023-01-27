@@ -7,6 +7,6 @@ export default class Car {
   }
 
   display() {
-    return `<p>  Mon véhicule est une ${this.name} ${this.model} de ${this.annee} elle a ${this.kilometrage} au compteur  `;
+    return `  est une ${this.name} ${this.model} de ${this.annee} elle a ${this.kilometrage} au compteur  `;
   }
 }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>js</title>
+  </head>
+  <body>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Genre</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Prenom</th>
+          <th scope="col">Date de naissance</th>
+          <th scope="col">Le 06</th>
+          <th scope="col">Emiel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <p id="text"></p>
+      </tbody>
+    </table>
+
+    <form class="form">
+      <div class="mb-3 row">
+        <div class="col-6 form-floating">
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="courbot"
+          />
+          <label for="floatingInput">Nom</label>
+        </div>
+        <div class="col-6 form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="firstname"
+            placeholder="theo"
+          />
+          <label for="floatingInput">Prenom</label>
+        </div>
+
+        <div class="col-4 form-floating">
+          <input type="date" class="form-control" />
+        </div>
+        <div class="col-4 form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            placeholder="0908070605"
+          />
+          <label for="floatingInput">Telephone</label>
+        </div>
+        <div class="col-4 form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="mail"
+            placeholder="ZUT.A@gmail.com"
+          />
+          <label for="floatingInput">Emiel</label>
+        </div>
+        <button class="btn btn-success" id="btn">Valider</button>
+      </div>
+    </form>
+  </body>
+  <script src="./script.js" type="module"></script>
+</html>

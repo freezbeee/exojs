@@ -26,7 +26,7 @@ class Contact {
 }
 btn.addEventListener("click", (e) => {
   // console.log(lastName);
-  console.log(firstname);
+  // console.log(firstname.value);
 
   e.preventDefault();
   contact = new Contact(lastName, firstname, phone, birth, mail);

@@ -2,7 +2,7 @@
 import Voiture from "./classe/voiture.js";
 import Moto from "./classe/moto.js";
 
-let renault = new Voiture("renault", "Kangoo", "200.000km", "2003");
+let renault = new Voiture("renault", "Kangoo", "200.000km", "2003", "est climatisé");
 let BMW = new Moto("BMW", "Rockster", "20.00km", "2009");
 
 console.log(renault.display());

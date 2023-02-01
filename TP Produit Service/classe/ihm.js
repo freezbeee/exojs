@@ -40,7 +40,7 @@ export class Ihm {
             this.Services.push(service)
          
             this.afficherService(service)
-        } else {
+        } else if (choix != "service") {
             
                         const produit = new Produit(titre,prix,text,stock)
                     
@@ -48,7 +48,7 @@ export class Ihm {
                      
                         this.afficher(produit)
 
-        }
+        } 
     }
 
     afficher(c){

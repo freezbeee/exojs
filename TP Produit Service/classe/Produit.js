@@ -1,8 +1,8 @@
 export class Produit {
-    constructor(t,p,d,s) {
+    constructor(t,p,text,s) {
         this.titre = t
         this.prix = p
-        this.description = d
+        this.text = text
         this.stock = s
        
     }

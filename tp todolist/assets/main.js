@@ -1,10 +1,13 @@
 import { Ihm } from "./classe/ihm.js";
 
+
 let formAddTodo = document.querySelector("#form-add-todo");
+let formsearchTodo = document.querySelector("#form-search-todo");
 
 let result = document.querySelector("#result");
 
 const ihmTodo = new Ihm(formAddTodo,result)
+const ihmSearch = new Ihm(formsearchTodo,result)
 
 ihmTodo.demarrer()
 

@@ -85,13 +85,24 @@ export class Ihm {
         <td>${c.title}</td>
         <td>${c.task}</td>
         <td><button type="button" id="finish${this.todoTable.indexOf(c)}" class="btn btn-outline-primary">Non fait</button>
-        <button type="button" id="supp${this.todoTable.indexOf(c)}" class="btn btn-outline-danger">supprimer</button></td>
+        <button type="button" id="supp${this.todoTable.indexOf(c)}" class="btn btn-outline-danger" >supprimer</button></td>
         
         </tr>
         `
         })
     }
     
-    
-    
+
+    search(){
+        setTimeout(()=>{
+        this.formulaire.addEventListener("submit",(e) => {
+            e.preventDefault();
+            console.log("coucou")
+            this.ajouterfilter();
+        })
+        })
+    }
+    ajouterfilter(){
+    let search = document.querySelector("#search").value;
+    }
 }

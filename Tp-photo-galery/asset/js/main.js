@@ -34,8 +34,8 @@ let fishTable = [
 ];
 let selectFish = fishTable[0];
 let myDivFishList = document.querySelector("#result-fish");
+let newpick = document.createElement("img");
 const refreshDescription = () => {
-    let newpick = document.createElement("img");
     let myDivFishDescription = document.querySelector("#result-description");
     if (selectFish) {
         let fishPick = document.querySelector("#fishPick");

@@ -35,11 +35,13 @@ let fishTable = [
 let selectFish = fishTable[0];
 let myDivFishList = document.querySelector("#result-fish");
 let newpick = document.createElement("img");
+let next = document.querySelector("#next");
+let last = document.querySelector("#last");
 const refreshDescription = () => {
     let myDivFishDescription = document.querySelector("#result-description");
     if (selectFish) {
         let fishPick = document.querySelector("#fishPick");
-        newpick.className = "card-img-top rounded-circle";
+        newpick.className = "card-img-top rounded-circle ";
         newpick.src = selectFish.url;
         myDivFishDescription.innerHTML = selectFish.Description;
         fishPick.appendChild(newpick);
@@ -66,5 +68,14 @@ const refreshFish = () => {
         myDivFishList.appendChild(newButton);
     });
 };
+next.addEventListener("click", () => {
+    console.log("suivant");
+    refreshDescription();
+});
+last.addEventListener("click", () => {
+    console.log("precedent");
+    refreshFish();
+    refreshDescription();
+});
 refreshFish();
 refreshDescription();

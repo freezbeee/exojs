@@ -54,6 +54,8 @@ let fishTable = [
 let selectFish = fishTable[0];
 let myDivFishList = document.querySelector("#result-fish") as HTMLDivElement;
 let newpick = document.createElement("img");
+let next = document.querySelector("#next") as HTMLDivElement;
+let last = document.querySelector("#last") as HTMLDivElement;
 
 const refreshDescription = () => {
   let myDivFishDescription = document.querySelector(
@@ -62,7 +64,8 @@ const refreshDescription = () => {
 
   if (selectFish) {
     let fishPick = document.querySelector("#fishPick") as HTMLDivElement;
-    newpick.className = "card-img-top rounded-circle";
+    newpick.className = "card-img-top rounded-circle ";
+
     newpick.src = selectFish.url;
     myDivFishDescription.innerHTML = selectFish.Description;
 
@@ -91,6 +94,16 @@ const refreshFish = () => {
     myDivFishList.appendChild(newButton);
   });
 };
+next.addEventListener("click", () => {
+  console.log("suivant");
+
+  refreshDescription();
+});
+last.addEventListener("click", () => {
+  console.log("precedent");
+  refreshFish();
+  refreshDescription();
+});
 
 refreshFish();
 refreshDescription();

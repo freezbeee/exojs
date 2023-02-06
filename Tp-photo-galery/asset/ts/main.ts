@@ -33,7 +33,7 @@ class fish {
 
 let fishTable = [
   new fish(
-    "Nemo",
+    "Memo",
     "Le Poisson Clown",
     "la star des poisson s'est lui",
     "./asset/img/Nemo.webp"
@@ -45,8 +45,8 @@ let fishTable = [
     "./asset/img/blop.jfif"
   ),
   new fish(
-    "Bubule",
-    "Le Poisson Rouge",
+    "Dorito",
+    "le poisson a patte",
     "Mellieur nom a donné a votre poisson",
     "./asset/img/dori.jfif"
   ),

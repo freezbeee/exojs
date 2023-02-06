@@ -1,0 +1,10 @@
+img {
+  height: 20vh;
+  width: 20vw;
+}
+#last {
+  cursor: pointer;
+}
+#next {
+  cursor: pointer;
+}

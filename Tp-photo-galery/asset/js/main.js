@@ -28,9 +28,9 @@ class fish {
 fish._count = 0;
 // console.log(fish);
 let fishTable = [
-    new fish("Nemo", "Le Poisson Clown", "la star des poisson s'est lui", "./asset/img/Nemo.webp"),
+    new fish("Memo", "Le Poisson Clown", "la star des poisson s'est lui", "./asset/img/Nemo.webp"),
     new fish("Blop", "Fish", "l'un poisson le plus moche Avertissement risque de devenir aveugle", "./asset/img/blop.jfif"),
-    new fish("Bubule", "Le Poisson Rouge", "Mellieur nom a donné a votre poisson", "./asset/img/dori.jfif"),
+    new fish("Dorito", "Le poisson pate", "Mellieur nom a donné a votre poisson", "./asset/img/dori.jfif"),
 ];
 let selectFish = fishTable[0];
 let myDivFishList = document.querySelector("#result-fish");
